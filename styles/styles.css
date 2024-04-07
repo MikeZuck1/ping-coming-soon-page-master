@@ -78,3 +78,12 @@ button {
     color: hsl(223, 100%, 88%);
 }
 
+
+/* CONTENT PAGE */
+.content-image {
+    margin-top: 50px;
+}
+
+.content-image img {
+    width: 100%;
+}
