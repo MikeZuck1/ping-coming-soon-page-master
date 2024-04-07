@@ -76,6 +76,7 @@ button {
     border: none;
     background-color: hsl(223, 87%, 63%);
     color: hsl(223, 100%, 88%);
+    cursor: pointer;
 }
 
 
@@ -100,6 +101,7 @@ button {
 .twitter, 
 .instagram {
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .social-media i  {
