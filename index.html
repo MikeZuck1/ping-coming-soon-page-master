@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="script.js"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
@@ -13,27 +14,43 @@
   <main>
     <div class="container">
       <!-- CONTENT OF PAGE -->
-      <div class="content"> 
+      <div class="content">
+        <!-- TITLE -->
         <div class="title">
           <h1>PING<span>.</span></h1>
         </div>
 
+        <!-- SLOGAN -->
         <div class="slogan">
           <h1><span>We are launching</span> soon!</h1>
-          <p>Subscribe and get notified</p>
+          <p class="subscribe">Subscribe and get notified</p>
         </div>
 
+        <!-- INPUT AND BUTTON -->
         <div class="input-search">
-          <input type="search" id="site-search" name="search" placeholder="Your email address"/>
-          <button>Notify Me</button>
+
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Your email address" 
+            pattern=".+@example\.com" 
+            required 
+          />
+
+          <p id="errorMessage" hidden></p>
+          <input type="submit" value="Notify Me" class="submit">
+          <!-- <button>Notify Me</button>  -->
         </div>
 
+        <!-- CONTENT IMAGE -->       
         <div class="content-image">
           <img src="./images/illustration-dashboard.png" alt="illustration-dashboard">
         </div>
 
+        <!-- COPYRIGHT AND SOCIAL MEDIA ICONS -->
         <div class="social-media">
-
+          <!-- SOCIAL MEDIA ICONS -->
           <div class="facebook">
             <i class="fa-brands fa-facebook-f"></i>
           </div>
@@ -45,7 +62,7 @@
           </div>
 
         </div>
-
+        <!-- COPYRIGHT -->
         <p class="copyright">&copy;Copyright Ping All rigths reserved.</p>
       </div>
 
@@ -54,13 +71,3 @@
 
 </body>
 </html>
-
-<!--
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
--->

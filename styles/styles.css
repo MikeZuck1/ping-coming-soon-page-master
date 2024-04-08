@@ -31,7 +31,6 @@ main {
     color: hsl(223, 87%, 63%);
 }
 
-
 /* SLOGAN PART */
 .slogan {
     margin-top: 40px;
@@ -48,7 +47,7 @@ main {
     font-weight: bold;
 }
 
-.slogan p {
+.subscribe {
     text-align: center;
     margin-top: 10px;
 }
@@ -69,15 +68,26 @@ input {
     margin-right: 10px;
 }
 
-button {
+.submit {
     width: 50%;
     padding: 10px;
     border-radius: 20px;
     border: none;
     background-color: hsl(223, 87%, 63%);
-    color: hsl(223, 100%, 88%);
+    color: hsl(227, 22%, 92%);
     cursor: pointer;
+    font-weight: bold;
 }
+
+form input[type="submit"] {
+    cursor: pointer; 
+}
+
+#errorMessage {
+    color: hsl(354, 100%, 66%);
+    font-size: 22px;
+}
+
 
 
 /* CONTENT PAGE */
